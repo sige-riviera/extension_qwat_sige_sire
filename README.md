@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This is the custom SIGE+SIRE extension for QWAT Datamodel
 
 Because PUM does not yet manage upgrade while having multiple extensions, this extension is a merge of the SIGE and SIRE extensions.
@@ -29,3 +30,6 @@ The template contains an example script for initializing the extension in QWAT. 
 ## Integration test
 
 If you want to test your code with Travis CI, you have the pre-configured scripts at your disposal. For this step you must declare the CI in your project and generate a token and declare it in Travis under the name GH_TOKEN.
+=======
+# extension_qwat_sige_sire
+>>>>>>> 79738d049c24f151eff746f2d81875f2009f3bc7
