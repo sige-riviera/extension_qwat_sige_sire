@@ -1,8 +1,5 @@
 -- add extra fields to qwat_od tables
 
-
---DEV takecare of model, export_remark, update_date, schema_force_visible_old, survey_type (code_sire)
-
 ALTER TABLE qwat_od.folder ADD COLUMN authority_approval_identification character varying(50);
 ALTER TABLE qwat_od.folder ADD COLUMN authority_approval_description text;
 ALTER TABLE qwat_od.folder ADD COLUMN exported_to_authority boolean;
