@@ -7,3 +7,9 @@
 --INSERT INTO qwat_vl.status(id, vl_active, short_fr, value_fr) VALUES (7091, true, 'Elgef 63', 'Elgef 63 (NPS: 2 DN: 50'));
 
 --INSERT INTO qwat_vl.part_type(id, vl_active, value_fr) VALUES (9251, true, 'débit permanent');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_ro,value_fr,value_ro,diameter,code_sire,sia405code) VALUES (10001,true,'PVC','PVC','Chlorure de polyvinyle','Policlorură de vinil','300',6,'Kunststoff.Polyvinylchlorid.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,value_fr,diameter,diameter_nominal,diameter_internal,code_sire,pressure_nominal,sia405code) VALUES (10002,true,'FAE','Fonte auto-étanche','125',125,125,4,10,'Guss.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_ro,value_fr,value_ro,diameter,diameter_nominal,diameter_internal,code_sire,sia405code) VALUES (10003,true,'AC','OL','Acier','Oţel','700',700,700,11,'Stahl.unbekannt');
