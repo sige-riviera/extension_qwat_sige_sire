@@ -13,3 +13,5 @@
 --INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,value_fr,diameter,diameter_nominal,diameter_internal,code_sire,pressure_nominal,sia405code) VALUES (10002,true,'FAE','Fonte auto-étanche','125',125,125,4,10,'Guss.unbekannt');
 
 --INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_ro,value_fr,value_ro,diameter,diameter_nominal,diameter_internal,code_sire,sia405code) VALUES (10003,true,'AC','OL','Acier','Oţel','700',700,700,11,'Stahl.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_ro,value_fr,value_ro,diameter,diameter_nominal,diameter_internal,code_sire,sia405code) VALUES (10004,true,'ACI','OLI','Acier inoxydable','Oţel Inoxidabil','35',35,35,11,'Stahl.rostbestaendig');
