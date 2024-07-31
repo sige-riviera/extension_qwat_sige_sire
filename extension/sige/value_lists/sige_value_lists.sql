@@ -17,3 +17,5 @@
 --INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_nominal,diameter_internal,code_sire,sia405code) VALUES (10004,true,'ACI','','OLI','Acier inoxydable','','Oţel Inoxidabil','35',35,35,11,'Stahl.rostbestaendig');
 
 --INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,code_sire,sia405code) VALUES (10005,true,'PEX','','PEX','Polyéthylène réticulé','','Polietilenă reticulată','20',10,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,code_sire,pressure_nominal,sia405code) VALUES (10006,true,'F','','F','Fonte','','Fontă','400',4,40,'Guss.unbekannt');
