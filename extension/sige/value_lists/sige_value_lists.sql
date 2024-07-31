@@ -33,3 +33,31 @@
 --INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_nominal,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10012,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','160',125,130.8,160,10,16,'Kunststoff.Polyethylen.unbekannt');
 
 --INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_nominal,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10013,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','200',160,163.6,200,10,16,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10014,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','40',35.2,40,10,10,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10015,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','50',44,50,10,10,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10016,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','63',55.4,63,10,10,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10017,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','90',79.2,90,10,10,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10018,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','125',110.2,125,10,10,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10019,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','160',141,160,10,10,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10020,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','200',176.2,200,10,10,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10021,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','40',29,40,10,25,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10022,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','50',36.2,50,10,25,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10023,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','63',45.8,63,10,25,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10024,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','90',65.4,90,10,25,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10025,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','125',90.8,125,10,25,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10026,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','160',116.2,160,10,25,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10027,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','200',145.2,200,10,25,'Kunststoff.Polyethylen.unbekannt');
