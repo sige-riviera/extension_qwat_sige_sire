@@ -61,3 +61,6 @@
 --INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10026,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','160',116.2,160,10,25,'Kunststoff.Polyethylen.unbekannt');
 
 --INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_internal,diameter_external,code_sire,pressure_nominal,sia405code) VALUES (10027,true,'PE GEROfit','','PE GEROfit','Polyéthylène 100 GEROfit','','Polietilenă 100 GEROfit','200',145.2,200,10,25,'Kunststoff.Polyethylen.unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_nominal,diameter_internal,code_sire,pressure_nominal,sia405code) VALUES (10028,true,'FAE','','','Fonte auto-étanche','','','80',80,80,4,25,'Guss.unbekannt');
+
