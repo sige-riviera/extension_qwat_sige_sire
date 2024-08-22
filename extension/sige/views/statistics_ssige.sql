@@ -4,55 +4,59 @@
 
 CREATE OR REPLACE VIEW usr_sige.statistics_ssige
  AS
- SELECT 'See annual report value - Difference n1320 values with previous year'::text AS n1300,
-    'See annual report value'::text AS n1310,
-    n1320.n1320,
+ SELECT 'Voir rapport annuel'::text AS n1300,
+    'Voir rapport annuel'::text AS n1310,
+    'Voir rapport annuel'::text AS n1320,
     n1370.n1370,
     n1410.n1410,
     n1420.n1420,
     n1440.n1440,
     n1450.n1450,
-    'Not yet implemented'::text AS n1530,
-    'Not yet implemented'::text AS n1540,
-    'Not yet implemented'::text AS n1550,
-    'Not yet implemented'::text AS n1560,
-    'Not yet implemented'::text AS n1570,
-    'Not yet implemented'::text AS n1580,
-    'Not yet implemented'::text AS n1600,
-    'Not yet implemented'::text AS n1610,
-    'Not yet implemented'::text AS n1620,
-    'Not yet implemented'::text AS n1630,
-    'Not yet implemented'::text AS n1640,
-    'Not yet implemented'::text AS n1650,
-    'Not yet implemented'::text AS n1660,
-    'Not yet implemented'::text AS n1670,
-    'Not yet implemented'::text AS n1680,
-    'Not yet implemented'::text AS n1700,
-    'Not yet implemented'::text AS n1710,
-    'Not yet implemented'::text AS n1720,
-    'Not yet implemented'::text AS n1730,
-    'Not yet implemented'::text AS n1740,
-    'Not yet implemented'::text AS n1750,
-    'Not yet implemented'::text AS n1770,
-    'Not yet implemented'::text AS n1780,
-    'Not yet implemented'::text AS n1790,
-    'Not yet implemented'::text AS n1800,
-    'Not yet implemented'::text AS n1810,
-    'Not yet implemented'::text AS n1820,
-    'Not yet implemented'::text AS n1840,
-    'Not yet implemented'::text AS n1850,
-    'Not yet implemented'::text AS n1860,
-    'Not yet implemented'::text AS n1870,
-    'Not yet implemented'::text AS n1880,
-    'Not yet implemented'::text AS n1890,
-    'Not yet implemented'::text AS n1910,
-    'Not yet implemented'::text AS n1920,
-    'Not yet implemented'::text AS n1930,
-    'Not yet implemented'::text AS n1940,
-    'Not yet implemented'::text AS n1950,
-    'Not yet implemented'::text AS n1960,
-    'Not yet implemented'::text AS n1970,
-    'New in 2021'::text AS n3240,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1530,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1540,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1550,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1560,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1570,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1580,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1600,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1610,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1620,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1630,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1640,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1650,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1660,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1670,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1680,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1700,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1710,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1720,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1730,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1740,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1750,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1770,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1780,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1790,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1800,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1810,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1820,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1840,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1850,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1860,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1870,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1880,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1890,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1910,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1920,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1930,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1940,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1950,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1960,
+    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1970,
+    'Effectué par Resp. clientèle'::text AS n2060,
+    'Effectué par Resp. clientèle'::text AS n2070,
+    'Effectué par Resp. clientèle'::text AS n2080,
+    'Effectué par Resp. clientèle'::text AS n2100,
+    'Nouveau depuis statistique 2021'::text AS n3240,
     n3250.n3250,
     n3260.n3260,
     n3270.n3270,
@@ -67,15 +71,12 @@ CREATE OR REPLACE VIEW usr_sige.statistics_ssige
     n3360.n3360,
     n3370.n3370,
     n3380.n3380
-   FROM ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1320
-           FROM qwat_od.vw_export_pipe
-          WHERE vw_export_pipe.fk_distributor = 1 AND vw_export_pipe.status_active IS TRUE AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4105, 4107, 4109, 4112]))) n1320
-     CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1370
+   FROM (SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1370
            FROM qwat_od.vw_export_pipe
           WHERE vw_export_pipe.fk_distributor = 1 AND vw_export_pipe.status_active IS TRUE AND (vw_export_pipe.fk_function = ANY (ARRAY[4106, 4108]))) n1370
      CROSS JOIN ( SELECT count(*) AS n1410
            FROM qwat_od.vw_export_valve
-          WHERE vw_export_valve.fk_distributor = 1 AND vw_export_valve.status_active IS TRUE AND (vw_export_valve.fk_valve_function <> ALL (ARRAY[6105, 6108]))) n1410
+          WHERE vw_export_valve.fk_distributor = 1 AND vw_export_valve.status_active IS TRUE AND vw_export_valve.fk_status != 1307 AND (vw_export_valve.fk_valve_function <> ALL (ARRAY[6105, 6108]))) n1410
      CROSS JOIN ( SELECT count(*) AS n1420
            FROM qwat_od.vw_export_valve
           WHERE vw_export_valve.fk_distributor = 1 AND vw_export_valve.status_active IS TRUE AND (vw_export_valve.fk_valve_function = ANY (ARRAY[6105, 6108]))) n1420
@@ -130,4 +131,3 @@ CREATE OR REPLACE VIEW usr_sige.statistics_ssige
 
 ALTER TABLE usr_sige.statistics_ssige
     OWNER TO sige;
-
