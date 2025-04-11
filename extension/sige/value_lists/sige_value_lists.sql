@@ -4,6 +4,8 @@
 
 --UPDATE qwat_vl.status SET vl_active = true, active = false, functional = false, value_fr = 'en attente', value_en = 'waiting', description_fr = 'L''objet en attente n''est pas fonctionnel et ne contribue pas au réseau. Il nécessite des opérations pour être mis/remis en service. Dans le cas d''une conduite, il n''est pas suffisant d''ouvrir une vanne pour le mettre en service car il n’est par exemple pas raccordé au réseau.' WHERE id = 1308;
 
+--UPDATE qwat_vl.nominal_diameter SET value_fr = 'NPS: 2 1/2 DN: 65 OD: 76.1', value_en = 'NPS: 2 1/2 DN: 65 OD: 76.1', value_ro = 'NPS: 2 1/2 DN: 65 OD: 76.1' WHERE id = 7008 AND short_fr = '65' AND value_fr LIKE '%OD: 73.03%';
+
 --INSERT INTO qwat_vl.status(id, vl_active, short_fr, value_fr) VALUES (7091, true, 'Elgef 63', 'Elgef 63 (NPS: 2 DN: 50'));
 
 --INSERT INTO qwat_vl.part_type(id, vl_active, value_fr) VALUES (9251, true, 'débit permanent');
