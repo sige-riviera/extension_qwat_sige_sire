@@ -66,4 +66,6 @@
 
 --INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_nominal,diameter_internal,code_sire,pressure_nominal,sia405code) VALUES (10028,true,'FAE','','','Fonte auto-étanche','','','80',80,80,4,25,'Guss.unbekannt');
 
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_external,code_sire,sia405code) VALUES (10029,true,'PP','','','Polypropylène','','','400',400,0,'unbekannt');
+
 --INSERT INTO qwat_vl.valve_function (id,vl_active,value_fr,sia405code) VALUES (6190,true,'vanne de décharge','Schieber.unbekannt');
