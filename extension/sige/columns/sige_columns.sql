@@ -15,3 +15,10 @@ ALTER TABLE qwat_od.subscriber ADD COLUMN usr_external_meter boolean;
 ALTER TABLE qwat_od.subscriber ADD COLUMN usr_external_meter_remark character varying(50);
 
 ALTER TABLE qwat_od.remote ADD COLUMN sige_cable_installed boolean;
+
+-- Following columns additions needs to drop then to recreate and to adapt view and triggers:
+
+ALTER TABLE qwat_od.part ADD COLUMN usr_offset character varying(12),
+ALTER TABLE qwat_od.part ADD COLUMN usr_symbol_type integer,
+ALTER TABLE qwat_od.part ADD COLUMN usr_symbol_scale_type integer,
+ALTER TABLE qwat_od.part ADD COLUMN usr_symbol_visibility_type integer;
