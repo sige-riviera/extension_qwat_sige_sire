@@ -68,4 +68,8 @@
 
 --INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_external,code_sire,sia405code) VALUES (10029,true,'PP','','','Polypropylène','','','400',400,0,'unbekannt');
 
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_nominal,diameter_internal,code_sire,sia405code) VALUES (10030,true,'ACI','','OLI','Acier inoxydable','','Oţel Inoxidabil','300',300,300,11,'Stahl.rostbestaendig');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_nominal,diameter_internal,code_sire,sia405code) VALUES (10031,true,'ACI','','OLI','Acier inoxydable','','Oţel Inoxidabil','400',400,400,11,'Stahl.rostbestaendig');
+
 --INSERT INTO qwat_vl.valve_function (id,vl_active,value_fr,sia405code) VALUES (6190,true,'vanne de décharge','Schieber.unbekannt');
