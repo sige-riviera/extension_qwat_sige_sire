@@ -1,8 +1,8 @@
--- View: usr_sige.statistics_ssige
+-- View: usr_sige.statistics
 
--- DROP VIEW usr_sige.statistics_ssige;
+-- DROP VIEW usr_sige.statistics;
 
-CREATE OR REPLACE VIEW usr_sige.statistics_ssige
+CREATE OR REPLACE VIEW usr_sige.statistics
  AS
  SELECT 'Voir rapport annuel'::text AS n1300,
     'Voir rapport annuel'::text AS n1310,
@@ -129,5 +129,5 @@ CREATE OR REPLACE VIEW usr_sige.statistics_ssige
            FROM qwat_od.vw_export_leak
           WHERE vw_export_leak.repair_date >= to_date(((date_part('year'::text, 'now'::text::date) - 1::double precision)::text) || '-01-01'::text, 'YYYY-MM-DD'::text) AND vw_export_leak.repair_date <= to_date(((date_part('year'::text, 'now'::text::date) - 1::double precision)::text) || '-12-31'::text, 'YYYY-MM-DD'::text) AND (vw_export_leak.pipe_fk_function = ANY (ARRAY[4108, 4106])) AND (vw_export_leak.fk_cause = ANY (ARRAY[101, 102, 103]))) n3380;
 
-ALTER TABLE usr_sige.statistics_ssige
+ALTER TABLE usr_sige.statistics
     OWNER TO sige;
