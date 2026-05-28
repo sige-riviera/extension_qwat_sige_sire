@@ -41,50 +41,50 @@ CREATE OR REPLACE VIEW usr_sige.statistics
     n1420.n1420,
     n1440.n1440,
     n1450.n1450,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1540,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1550,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1560,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1570,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1580,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1600,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1610,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1620,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1630,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1640,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1650,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1660,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1670,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1680,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1700,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1710,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1720,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1730,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1740,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1750,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1770,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1780,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1790,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1800,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1810,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1820,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1840,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1850,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1860,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1870,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1880,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1890,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1910,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1920,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1930,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1940,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1950,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1960,
-    'Pas encore communiqué à SSIGE, pas encore implémenté dans Postgis'::text AS n1970,
-    'Effectué par Resp. clientèle'::text AS n2060,
-    'Effectué par Resp. clientèle'::text AS n2070,
-    'Effectué par Resp. clientèle'::text AS n2080,
-    'Effectué par Resp. clientèle'::text AS n2100,
-    'Nouveau depuis statistique 2021'::text AS n3240,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1540,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1550,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1560,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1570,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1580,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1600,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1610,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1620,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1630,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1640,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1650,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1660,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1670,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1680,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1700,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1710,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1720,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1730,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1740,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1750,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1770,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1780,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1790,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1800,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1810,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1820,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1840,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1850,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1860,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1870,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1880,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1890,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1910,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1920,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1930,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1940,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1950,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1960,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1970,
+    'Resp. clientèle'::text AS n2060,
+    'Resp. clientèle'::text AS n2070,
+    n2080.n2080,
+    'Resp. clientèle'::text AS n2100,
+    'Resp. exploitation'::text AS n3240,
     n3250.n3250,
     n3260.n3260,
     n3270.n3270,
@@ -161,6 +161,26 @@ CREATE OR REPLACE VIEW usr_sige.statistics
      CROSS JOIN ( SELECT count(*) AS n1450
            FROM qwat_od.vw_export_hydrant
           WHERE vw_export_hydrant.pressurezone_fk_distributor = 1 AND vw_export_hydrant.status_functional IS TRUE AND vw_export_hydrant.underground IS TRUE) n1450
+     CROSS JOIN ( WITH reseau AS (
+                 SELECT vw_export_pipe.geometry
+                   FROM qwat_od.vw_export_pipe
+                  WHERE (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4105, 4107, 4109, 4151])) AND vw_export_pipe.fk_distributor = 1 AND vw_export_pipe.status_functional IS TRUE
+                ), extremites AS (
+                 SELECT vw_export_pipe.id,
+                    st_startpoint(vw_export_pipe.geometry) AS pt
+                   FROM qwat_od.vw_export_pipe
+                  WHERE (vw_export_pipe.fk_function = ANY (ARRAY[4106, 4108])) AND vw_export_pipe.fk_distributor = 1 AND vw_export_pipe.status_functional IS TRUE
+                UNION ALL
+                 SELECT vw_export_pipe.id,
+                    st_endpoint(vw_export_pipe.geometry) AS pt
+                   FROM qwat_od.vw_export_pipe
+                  WHERE (vw_export_pipe.fk_function = ANY (ARRAY[4106, 4108])) AND vw_export_pipe.fk_distributor = 1 AND vw_export_pipe.status_functional IS TRUE
+                )
+         SELECT count(DISTINCT e.id) AS n2080
+           FROM extremites e
+          WHERE (EXISTS ( SELECT 1
+                   FROM reseau r
+                  WHERE r.geometry && st_expand(e.pt, 0.01::double precision) AND st_dwithin(e.pt, r.geometry, 0.01::double precision)))) n2080
      CROSS JOIN ( SELECT count(vw_export_leak.id) AS n3250
            FROM qwat_od.vw_export_leak
           WHERE vw_export_leak.detection_date >= to_date(((date_part('year'::text, 'now'::text::date) - 1::double precision)::text) || '-01-01'::text, 'YYYY-MM-DD'::text) AND vw_export_leak.detection_date <= to_date(((date_part('year'::text, 'now'::text::date) - 1::double precision)::text) || '-12-31'::text, 'YYYY-MM-DD'::text) AND (vw_export_leak.pipe_fk_function = ANY (ARRAY[4101, 4102, 4103, 4105, 4107, 4109, 4112, 4151]))) n3250
@@ -206,4 +226,3 @@ CREATE OR REPLACE VIEW usr_sige.statistics
 
 ALTER TABLE usr_sige.statistics
     OWNER TO sige;
-
