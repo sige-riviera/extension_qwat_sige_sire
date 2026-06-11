@@ -41,6 +41,7 @@ CREATE OR REPLACE VIEW usr_sige.statistics
     n1420.n1420,
     n1440.n1440,
     n1450.n1450,
+    'Pas communiqué à SSIGE, pas implémenté'::text AS n1530,
     'Pas communiqué à SSIGE, pas implémenté'::text AS n1540,
     'Pas communiqué à SSIGE, pas implémenté'::text AS n1550,
     'Pas communiqué à SSIGE, pas implémenté'::text AS n1560,
@@ -145,7 +146,7 @@ CREATE OR REPLACE VIEW usr_sige.statistics
           WHERE vw_export_installation.fk_distributor = 1 AND vw_export_installation.fk_status = 1301 AND vw_export_installation.installation_type = 'pump'::qwat_od.installation_type) c2230
      CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1320
            FROM qwat_od.vw_export_pipe
-          WHERE vw_export_pipe.fk_distributor = 1 AND vw_export_pipe.status_active IS TRUE AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4105, 4107, 4109, 4112, 4151]))) n1320
+          WHERE vw_export_pipe.fk_distributor = 1 AND vw_export_pipe.status_active IS TRUE AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151]))) n1320
      CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1370
            FROM qwat_od.vw_export_pipe
           WHERE vw_export_pipe.fk_distributor = 1 AND vw_export_pipe.status_active IS TRUE AND (vw_export_pipe.fk_function = ANY (ARRAY[4106, 4108]))) n1370
