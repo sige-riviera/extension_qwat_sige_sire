@@ -41,50 +41,49 @@ CREATE OR REPLACE VIEW usr_sige.statistics
     n1420.n1420,
     n1440.n1440,
     n1450.n1450,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1530,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1540,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1550,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1560,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1570,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1580,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1600,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1610,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1620,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1630,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1640,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1650,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1660,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1670,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1680,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1700,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1710,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1720,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1730,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1740,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1750,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1770,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1780,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1790,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1800,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1810,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1820,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1840,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1850,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1860,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1870,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1880,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1890,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1910,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1920,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1930,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1940,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1950,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1960,
-    'Pas communiqué à SSIGE, pas implémenté'::text AS n1970,
+    n1530.n1530,
+    n1540.n1540,
+    n1550.n1550,
+    n1560.n1560,
+    n1570.n1570,
+    n1580.n1580,
+    n1600.n1600,
+    n1610.n1610,
+    n1620.n1620,
+    n1630.n1630,
+    n1650.n1650,
+    n1660.n1660,
+    n1670.n1670,
+    n1680.n1680,
+    n1700.n1700,
+    n1710.n1710,
+    n1720.n1720,
+    n1730.n1730,
+    n1740.n1740,
+    n1750.n1750,
+    n1770.n1770,
+    n1780.n1780,
+    n1790.n1790,
+    n1800.n1800,
+    n1810.n1810,
+    n1820.n1820,
+    n1840.n1840,
+    n1850.n1850,
+    n1860.n1860,
+    n1870.n1870,
+    n1880.n1880,
+    n1890.n1890,
+    n1910.n1910,
+    n1920.n1920,
+    n1930.n1930,
+    n1940.n1940,
+    n1950.n1950,
+    n1960.n1960,
+    n1970.n1970,
     'Resp. clientèle'::text AS n2060,
     'Resp. clientèle'::text AS n2070,
     n2080.n2080,
-    'Resp. clientèle'::text AS n2100,
+    n2100.n2100,
     'Resp. exploitation'::text AS n3240,
     n3250.n3250,
     n3260.n3260,
@@ -162,6 +161,93 @@ CREATE OR REPLACE VIEW usr_sige.statistics
      CROSS JOIN ( SELECT count(*) AS n1450
            FROM qwat_od.vw_export_hydrant
           WHERE vw_export_hydrant.pressurezone_fk_distributor = 1 AND vw_export_hydrant.status_functional IS TRUE AND vw_export_hydrant.underground IS TRUE) n1450
+	 CROSS JOIN ( SELECT 0 AS n1530) n1530
+	 CROSS JOIN ( SELECT 0 AS n1540) n1540
+	 CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1550
+			FROM qwat_od.vw_export_pipe
+			WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151])) AND pipe_material_short_fr = 'F' AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1550
+	 CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1560
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4106,4108])) AND pipe_material_short_fr = 'F' AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1560
+	 CROSS JOIN ( SELECT max(pipe_material_diameter_nominal) AS n1570
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151, 4106, 4108])) AND pipe_material_short_fr = 'F' AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1570
+	 CROSS JOIN ( SELECT min(pipe_material_diameter_nominal) AS n1580
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151, 4106, 4108])) AND pipe_material_short_fr = 'F' AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1580
+	 CROSS JOIN ( SELECT 0 AS n1600) n1600
+	 CROSS JOIN ( SELECT 0 AS n1610) n1610
+	 CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1620
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151])) AND pipe_material_short_fr = 'FAE' AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1620
+	 CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1630
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4106,4108])) AND pipe_material_short_fr = 'FAE' AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1630
+	 CROSS JOIN ( SELECT 0 AS n1650) n1650
+	 CROSS JOIN ( SELECT 0 AS n1660) n1660
+	 CROSS JOIN ( SELECT max(pipe_material_diameter_nominal) AS n1670
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151, 4106, 4108])) AND pipe_material_short_fr = 'FAE' AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1670
+	 CROSS JOIN ( SELECT min(pipe_material_diameter_nominal) AS n1680
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151, 4106, 4108])) AND pipe_material_short_fr = 'FAE' AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1680
+	 CROSS JOIN ( SELECT 0 AS n1700) n1700
+	 CROSS JOIN ( SELECT 0 AS n1710) n1710
+	 CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1720
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151])) AND pipe_material_short_fr IN ('AC','ACG','ACI','ACPR') AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1720
+	 CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1730
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4106,4108])) AND pipe_material_short_fr IN ('AC','ACG','ACI','ACPR') AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1730
+	 CROSS JOIN ( SELECT max(pipe_material_diameter_nominal) AS n1740
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151, 4106, 4108])) AND pipe_material_short_fr IN ('AC','ACG','ACI','ACPR') AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1740
+	 CROSS JOIN ( SELECT min(pipe_material_diameter_nominal) AS n1750
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151, 4106, 4108])) AND pipe_material_short_fr IN ('AC','ACG','ACI','ACPR') AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1750
+	 CROSS JOIN ( SELECT 0 AS n1770) n1770
+	 CROSS JOIN ( SELECT 0 AS n1780) n1780
+	 CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1790
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151])) AND (pipe_material_short_fr IN ('PE','PE GEROfit','PEX','PE80') OR "fk_installmethod" = 4202)) n1790
+	 CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1800
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4106,4108])) AND (pipe_material_short_fr IN ('PE','PE GEROfit','PEX','PE80') OR "fk_installmethod" = 4202)) n1800
+	 CROSS JOIN ( SELECT max(pipe_material_diameter_nominal) AS n1810
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151, 4106, 4108])) AND (pipe_material_short_fr IN ('PE','PE GEROfit','PEX','PE80') OR "fk_installmethod" = 4202)) n1810
+	 CROSS JOIN ( SELECT min(pipe_material_diameter_nominal) AS n1820
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151, 4106, 4108])) AND (pipe_material_short_fr IN ('PE','PE GEROfit','PEX','PE80') OR "fk_installmethod" = 4202)) n1820
+	 CROSS JOIN ( SELECT 0 AS n1840) n1840
+	 CROSS JOIN ( SELECT 0 AS n1850) n1850
+	 CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1860
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151])) AND pipe_material_short_fr IN ('TAC') AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1860
+	 CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1870
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4106,4108])) AND pipe_material_short_fr IN ('TAC') AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1870
+	 CROSS JOIN ( SELECT max(pipe_material_diameter_nominal) AS n1880
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151, 4106, 4108])) AND pipe_material_short_fr IN ('TAC') AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1880
+	 CROSS JOIN ( SELECT min(pipe_material_diameter_nominal) AS n1890
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151, 4106, 4108])) AND pipe_material_short_fr IN ('TAC') AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1890
+	 CROSS JOIN ( SELECT 0 AS n1910) n1910
+	 CROSS JOIN ( SELECT 0 AS n1920) n1920
+	 CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1930
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151])) AND pipe_material_short_fr NOT IN ('F','FAE','AC','ACG','ACI','ACPR','PE','PE GEROfit','PEX','PE80','TAC') AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1930
+	 CROSS JOIN ( SELECT round(sum(st_length(vw_export_pipe.geometry))) AS n1940
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4106,4108])) AND pipe_material_short_fr NOT IN ('F','FAE','AC','ACG','ACI','ACPR','PE','PE GEROfit','PEX','PE80','TAC') AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1940
+	 CROSS JOIN ( SELECT max(pipe_material_diameter_nominal) AS n1950
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151, 4106, 4108])) AND pipe_material_short_fr NOT IN ('F','FAE','AC','ACG','ACI','ACPR','PE','PE GEROfit','PEX','PE80','TAC') AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1950
+	 CROSS JOIN ( SELECT min(pipe_material_diameter_nominal) AS n1960
+		   FROM qwat_od.vw_export_pipe
+		  WHERE vw_export_pipe.fk_distributor = 1 AND (vw_export_pipe.fk_status = ANY (ARRAY[1301, 1307])) AND (vw_export_pipe.fk_function = ANY (ARRAY[4101, 4102, 4103, 4104, 4105, 4107, 4109, 4111, 4112, 4151, 4106, 4108])) AND pipe_material_short_fr NOT IN ('F','FAE','AC','ACG','ACI','ACPR','PE','PE GEROfit','PEX','PE80','TAC') AND (fk_installmethod != 4202 OR fk_installmethod IS NULL)) n1960
+	 CROSS JOIN ( SELECT 'Eventuelles remarques' AS n1970) n1970
      CROSS JOIN ( WITH reseau AS (
                  SELECT vw_export_pipe.geometry
                    FROM qwat_od.vw_export_pipe
@@ -182,6 +268,9 @@ CREATE OR REPLACE VIEW usr_sige.statistics
           WHERE (EXISTS ( SELECT 1
                    FROM reseau r
                   WHERE r.geometry && st_expand(e.pt, 0.01::double precision) AND st_dwithin(e.pt, r.geometry, 0.01::double precision)))) n2080
+     CROSS JOIN ( SELECT COUNT(*) AS n2100
+           FROM qwat_od.vw_export_subscriber
+          WHERE fk_subscriber_type = 9403 AND status_vl_active IS TRUE) n2100
      CROSS JOIN ( SELECT count(vw_export_leak.id) AS n3250
            FROM qwat_od.vw_export_leak
           WHERE vw_export_leak.detection_date >= to_date(((date_part('year'::text, 'now'::text::date) - 1::double precision)::text) || '-01-01'::text, 'YYYY-MM-DD'::text) AND vw_export_leak.detection_date <= to_date(((date_part('year'::text, 'now'::text::date) - 1::double precision)::text) || '-12-31'::text, 'YYYY-MM-DD'::text) AND (vw_export_leak.pipe_fk_function = ANY (ARRAY[4101, 4102, 4103, 4105, 4107, 4109, 4112, 4151]))) n3250
