@@ -22,3 +22,5 @@ ALTER TABLE qwat_od.part ADD COLUMN usr_offset character varying(12),
 ALTER TABLE qwat_od.part ADD COLUMN usr_symbol_type integer,
 ALTER TABLE qwat_od.part ADD COLUMN usr_symbol_scale_type integer,
 ALTER TABLE qwat_od.part ADD COLUMN usr_symbol_visibility_type integer;
+
+ALTER TABLE qwat_od.sia405cc_cable ADD COLUMN usr_aerial boolean;
