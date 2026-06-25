@@ -23,6 +23,7 @@ CREATE OR REPLACE VIEW qwat_od.vw_export_sia405cc_cable
     sia405cc_cable.fk_owner,
     sia405cc_cable.fk_folder,
     sia405cc_cable.usr_aerial,
+    sia405cc_cable.geometry3d_geometry AS geometry,
     function.vsacode AS function_vsacode,
     function.value_en AS function_value_en,
     function.value_fr AS function_value_fr,

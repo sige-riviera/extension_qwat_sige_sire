@@ -25,6 +25,7 @@ CREATE OR REPLACE VIEW qwat_od.vw_export_sia405cc_cable_point
     sia405cc_cable_point.fk_provider,
     sia405cc_cable_point.fk_owner,
     sia405cc_cable_point.fk_folder,
+    sia405cc_cable_point.geometry3d_geometry AS geometry,
     kind.vsacode AS kind_vsacode,
     kind.value_en AS kind_value_en,
     kind.value_fr AS kind_value_fr,

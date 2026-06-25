@@ -21,6 +21,7 @@ CREATE OR REPLACE VIEW qwat_od.vw_export_sia405pt_protection_tube
     sia405pt_protection_tube.fk_owner,
     sia405pt_protection_tube.fk_pipe,
     sia405pt_protection_tube.fk_folder,
+    sia405pt_protection_tube.geometry3d_geometry AS geometry,
     material.vsacode AS material_vsacode,
     material.value_en AS material_value_en,
     material.value_fr AS material_value_fr,
