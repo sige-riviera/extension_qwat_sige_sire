@@ -73,3 +73,9 @@
 --INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_nominal,diameter_internal,code_sire,sia405code) VALUES (10031,true,'ACI','','OLI','Acier inoxydable','','Oţel Inoxidabil','400',400,400,11,'Stahl.rostbestaendig');
 
 --INSERT INTO qwat_vl.valve_function (id,vl_active,value_fr,sia405code) VALUES (6190,true,'vanne de décharge','Schieber.unbekannt');
+
+--INSERT INTO qwat_vl.sia405pt_protection_tube_material (code,vsacode,value_en,value_de,value_fr,value_it,value_ro,active) VALUES (10001,10001,'SOMO','SOMO','SOMO','SOMO','SOMO',true);
+
+--INSERT INTO qwat_vl.sia405pt_protection_tube_material (code,vsacode,value_en,value_de,value_fr,value_it,value_ro,active) VALUES (10002,10002,'Symalen','Symalen','Symalen','Symalen','Symalen',true);
+
+--INSERT INTO qwat_vl.sia405pt_protection_tube_material (code,vsacode,value_en,value_de,value_fr,value_it,value_ro,active) VALUES (10003,10003,'Eternit','Eternit','Eternit','Eternit','Eternit',true);
