@@ -79,3 +79,13 @@
 --INSERT INTO qwat_vl.sia405pt_protection_tube_material (code,vsacode,value_en,value_de,value_fr,value_it,value_ro,active) VALUES (10002,10002,'Symalen','Symalen','Symalen','Symalen','Symalen',true);
 
 --INSERT INTO qwat_vl.sia405pt_protection_tube_material (code,vsacode,value_en,value_de,value_fr,value_it,value_ro,active) VALUES (10003,10003,'Eternit','Eternit','Eternit','Eternit','Eternit',true);
+
+--INSERT INTO qwat_vl.sia405pt_protection_tube_material (code,vsacode,value_en,value_de,value_fr,value_it,value_ro,active) VALUES (10004,10004,'cement','Zement','ciment','cemento','cement',true);
+
+-- UPDATE qwat_vl.sia405cc_cable_function SET value_fr = 'câble de signal' WHERE value_fr = 'cable_de_signal';
+
+-- UPDATE qwat_vl.sia405cc_cable_function SET value_fr = 'câble de commande' WHERE value_fr = 'cable_de_conduite';
+
+--UPDATE qwat_vl.sia405cc_cable_function SET value_fr = 'câble de courant' WHERE value_fr = 'cable_de_courant';
+
+--UPDATE qwat_vl.sia405cc_cable_cable_type SET value_fr = 'fibre optique' WHERE value_fr = 'optique';
