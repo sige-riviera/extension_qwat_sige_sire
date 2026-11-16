@@ -91,3 +91,5 @@
 --UPDATE qwat_vl.sia405cc_cable_cable_type SET value_fr = 'fibre optique' WHERE value_fr = 'optique';
 
 --INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_external,code_sire,sia405code) VALUES (10032,true,'PP','','','Polypropylène','','','200',200,0,'unbekannt');
+
+--INSERT INTO qwat_vl.pipe_material (id,vl_active,short_fr,short_en,short_ro,value_fr,value_en,value_ro,diameter,diameter_nominal,diameter_internal,code_sire,sia405code) VALUES (10033,true,'ACI','','OLI','Acier inoxydable','','Oţel Inoxidabil','54',54,54,11,'Stahl.rostbestaendig');
